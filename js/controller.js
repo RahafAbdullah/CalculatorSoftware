@@ -18,8 +18,11 @@ class controller {
     dis(x) {
         if (this.para==1)
         {
+            if (x =='+' || x =='-' || x=='*' || x=='/') {
+                this.para = 0;
+            }
             this.CView.disval(x);
-            this.para=0;
+
         }
         else if(!(x =='+' || x =='-' || x=='*' || x=='/' ))
        {
